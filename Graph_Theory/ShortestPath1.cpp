@@ -16,7 +16,6 @@ void ShortestPath(vector<int>adj[],vector<int>&dist){
     while(!q.empty()){
         int curr = q.front();
         q.pop();
-        
         for(auto it : adj[curr]){
             if(dist[curr] + 1 < dist[it]){
                 dist[it] = dist[curr] + 1;
