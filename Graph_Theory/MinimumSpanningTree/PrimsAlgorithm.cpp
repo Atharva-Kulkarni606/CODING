@@ -10,7 +10,7 @@ int PrimsAlgorithm(vector<pair<int,int>>adj[],int n,int src){
     key[0] = 0;
     for(int count = 1; count < n; ++count){
             //1st
-            int mini_val = INT_MAX, mini_idx = -1;
+            int mini_val = INT_MAX, mini_idx = 0;
             for(int i = 1 ; i < n ; i++){
                 if(mst[i] == false && mini_val > key[i]){
                     mini_val = key[i];
